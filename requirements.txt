@@ -4,3 +4,4 @@ eventlet
 flask-socketio
 Flask
 uwsgi
+gunicorn
