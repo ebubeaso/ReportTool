@@ -1,0 +1,6 @@
+requests
+gevent
+eventlet
+flask-socketio
+Flask
+uwsgi

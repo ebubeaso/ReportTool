@@ -1,0 +1,111 @@
+button {
+  cursor: pointer;
+}
+
+.Title {
+  font-size: 44pt;
+  text-align: center;
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes slide {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.Paragraph {
+  font-size: 16pt;
+  text-align: center;
+  margin: 1% 15%;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Content {
+  background-color: lightgray;
+  padding: 2%;
+  margin: 5% 2%;
+  border: 2px solid black;
+}
+
+.Submit {
+  width: 12%;
+  padding: 1%;
+  font-size: 20pt;
+  border-radius: 15px;
+  margin: 0% 45%;
+}
+
+.Title, .Paragraph, .Monitor {
+  color: darkgreen;
+  font-family: Verdana, sans-serif;
+}
+
+.DataForm, .MonitorOptions {
+  display: flex;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.DataForm {
+  flex-direction: column;
+  margin: 1% 35%;
+}
+
+label {
+  font-size: 18pt;
+}
+
+.DataForm input {
+  font-size: 18pt;
+  padding: 1%;
+  margin: 2% 0%;
+}
+
+.DataForm #points, .DataForm #interval, .DataForm #port {
+  width: 75%;
+}
+
+#interval-value {
+  color: black;
+  text-align: left;
+  margin: 0% 0% 1% 1%;
+}
+
+.MonitorOptions label {
+  margin: 2% 4% 2% 1%;
+  /* margins => top, right, bottom, left */
+}
+
+.Monitor {
+  text-align: center;
+}
+
+.Linechart {
+  margin: 4% 20%;
+}
+
+/*# sourceMappingURL=style.css.map */
