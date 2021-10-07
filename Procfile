@@ -1,2 +1,2 @@
 #web: uwsgi uwsgi.ini
-web: gunicorn --worker-class eventlet -w 1 socket_app:app
+web: gunicorn -k gevent -w 1 socket_app:app
