@@ -1,6 +1,6 @@
 requests
 gevent
-eventlet
+eventlet==0.30.2
 flask-socketio
 Flask
 Flask-Cors
