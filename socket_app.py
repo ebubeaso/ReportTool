@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 from flask import Flask, render_template
 from flask_socketio import SocketIO, send, emit
+from flask_cors import CORS
 import json
 import time
 from monitors import parse_ping, parse_http
@@ -8,6 +9,7 @@ from datetime import datetime
 # initialize
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "EbubeAsoSocket"
+CORS(app)
 socket = SocketIO(app)
 ping_avg = [] # list for ping averages
 http_list = [] # list of HTTP response times

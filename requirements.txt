@@ -3,5 +3,6 @@ gevent
 eventlet
 flask-socketio
 Flask
+Flask-Cors
 uwsgi
 gunicorn
