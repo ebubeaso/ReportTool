@@ -1,1 +1,1 @@
-web: gunicorn — worker-class eventlet -w 1 socket_app:app
+web: uwsgi uwsgi.ini
