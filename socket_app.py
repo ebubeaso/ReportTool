@@ -29,9 +29,6 @@ def handle_connection(msg):
     the_data = json.loads(msg)
     if the_data["Report"] == "Ping":
         avg = parse_ping(the_data["Server"])
-        # ping_avg.append(avg)
-        # if len(ping_avg) == (int(the_data["Points"]) + 1): # This is to have the array move like a queue
-        #     ping_avg.pop(0)
         timestamp = datetime.now().strftime("%H:%M'%S")
         emit("Call", json.dumps({'Time': timestamp, 'TheData': avg}))
         time.sleep(the_data["TimeInterval"]/2) # The time interval to do the ping (seconds)
