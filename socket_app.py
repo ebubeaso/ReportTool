@@ -34,9 +34,6 @@ def handle_connection(msg):
         time.sleep(the_data["TimeInterval"]/2) # The time interval to do the ping (seconds)
     if the_data["Report"] == "HTTP":
         res = parse_http(the_data["Server"], the_data["Port"])
-        # http_list.append(res)
-        # if len(http_list) == (int(the_data["Points"]) + 1):
-        #     http_list.pop(0)
         timestamp = datetime.now().strftime("%H:%M'%S")
         emit("Call", json.dumps({'Time': timestamp, 'TheData': res}))
         time.sleep(the_data["TimeInterval"]/2) # The time interval to do the HTTP requests (seconds)
