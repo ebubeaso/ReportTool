@@ -5,6 +5,7 @@ button {
 .Title {
   font-size: 44pt;
   text-align: center;
+  font-weight: normal;
   animation-name: slide;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -52,7 +53,7 @@ button {
 
 .Title, .Paragraph, .Monitor {
   color: darkgreen;
-  font-family: Verdana, sans-serif;
+  font-family: monospace;
 }
 
 .DataForm, .MonitorOptions {

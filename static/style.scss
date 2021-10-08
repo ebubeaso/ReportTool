@@ -1,6 +1,6 @@
 // This is what I am going to use for working with compiling my CSS code
 // The font will be used commonly
-$font: Verdana, sans-serif;
+$font: monospace;
 $textColor: darkgreen;
 $formText: 18pt;
 @mixin fade-effect($duration) {
@@ -24,6 +24,7 @@ button {
 .Title {
     font-size: 44pt;
     text-align: center;
+    font-weight: normal;
     @include slide-effect(1s) {
         from {width: 0%;} to {width: 100%;}
     }
